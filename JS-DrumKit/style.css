@@ -36,7 +36,7 @@ button {
   color: white;
   text-transform: uppercase;
 
-  transition: transform 0.3s;
+  transition: transform 0.07s;
 }
 
 .playing {
