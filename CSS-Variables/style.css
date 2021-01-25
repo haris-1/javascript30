@@ -1,0 +1,64 @@
+:root {
+  --spacing: 10px;
+  --blur: 0px;
+  --color: #f7df1e;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #222;
+  color: #eee;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  color: var(--color);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+.controls {
+  flex: 1;
+  padding-top: 30px;
+}
+
+label,
+input {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+label {
+  font-size: 20px;
+}
+input {
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1;
+  background-color: var(--color);
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container {
+  position: absolute;
+  left: var(--spacing);
+  top: var(--spacing);
+  width: 50%;
+  height: 80%;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
