@@ -6,9 +6,50 @@
 
 html {
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 body {
   min-height: 100vh;
   background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.clock {
+  width: 250px;
+  height: 250px;
+  margin: 5rem auto;
+  border: 5px solid white;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.clock-face {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hour-hand,
+.min-hand,
+.second-hand {
+  width: 50%;
+  height: 3px;
+  background-color: white;
+
+  position: absolute;
+  top: 50%;
+
+  transform-origin: 100%;
 }
